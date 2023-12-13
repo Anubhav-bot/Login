@@ -13,7 +13,7 @@
 
 <tbody>
     <?php
-        include("../php/database/dbconnect.php");
+        include("dbconnect.php");
         $sql="select * from users";
         $result = $conn->query($sql);
         if($result->num_rows>0)
